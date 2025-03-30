@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дмитрий Жильцов - iOS Portfolio</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; max-width: 800px; margin: 20px auto; }
+        h1 { color: #333; font-size: 36px; margin-bottom: 0; }
+        h2 { color: #666; font-size: 24px; font-weight: 400; margin-top: 5px; }
+        h3 { font-size: 20px; margin-bottom: 5px; }
+        .subtitle { font-size: 16px; color: #888; margin-top: 0; }
+        .project { margin-bottom: 30px; }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .image-row a {
+            flex: 1;
+            min-width: 0;
+            max-width: 100%;
+            text-decoration: none;
+        }
+        .image-row img {
+            aspect-ratio: 9 / 16;
+            object-fit: contain;
+            max-width: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+        .image-row-horizontal {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .image-row-horizontal a {
+            flex: 1;
+            min-width: 0;
+            max-width: 100%;
+            text-decoration: none;
+        }
+        .image-row-horizontal img {
+            width: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        .project-link {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .project-link a {
+            color: #666;
+            text-decoration: none;
+        }
+        .project-link a:hover {
+            text-decoration: underline;
+        }
+
+        .toc {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .toc h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            color: #666;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <h1>Дмитрий Жильцов</h1>
+    <h2>iOS Developer</h2>
+
+    <p>Мои самые яркие работы</p>
+
+    <div class="toc">
+        <h3>Оглавление</h3>
+        <ul>
+            <li><a href="#ai-melody-generator">AI Melody Generator</a></li>
+            <li><a href="#fashion-design">Fashion Design</a></li>
+            <li><a href="#custom-desktop-theme-kit">Custom Desktop Theme Kit</a></li>
+            <li><a href="#couple-days">Couple Days</a></li>
+            <li><a href="#ai-story-writing">AI Story Writing</a></li>
+        </ul>
+    </div>
+
+    <div class="project" id="ai-melody-generator">
+        <h3>AI Melody Generator</h3>
+        <p class="subtitle">Ноябрь 2023</p>
+        <p>
+            Мобильное приложение для генерации AI-мелодий и текстов песен.
+            Я был ответственен за разработку проекта с нуля и его успешный выпуск в App Store. Мой первый опыт разработки на SwiftUI для продакшена.
+        </p>
+        <p><strong>Ключевые моменты:</strong></p>
+        <ul>
+            <li>Сверстал сложный UI</li>
+            <li>Реализовал генерацию мелодий в различных жанрах и настроениях</li>
+            <li>Разработал функционал аудиоплеера с поддержкой перемотки и воспроизведения</li>
+            <li>Добавил конвертацию аудиофайлов в форматы MP3, WAV, FLAC</li>
+            <li>Внедрил аналитику, монетизацию и локализацию на несколько языков</li>
+        </ul>
+        <p>
+            <strong>Технологии:</strong> SwiftUI, Combine, Core Data, FFmpegKit<br>
+            <strong>Платформа:</strong> iOS 14+
+        </p>
+        <div class="image-row">
+            <a href="assets/ai_melody_offer.gif" target="_blank">
+                <img src="assets/ai_melody_offer.gif" alt="AI Melody Generator Offer Animation">
+            </a>
+            <a href="assets/ai_melody_main.png" target="_blank">
+                <img src="assets/ai_melody_main.png" alt="AI Melody Generator Main Screen">
+            </a>
+            <a href="assets/ai_melody_audio.gif" target="_blank">
+                <img src="assets/ai_melody_audio.gif" alt="AI Melody Generator Audio Screen">
+            </a>
+            <a href="assets/ai_melody_convertation.png" target="_blank">
+                <img src="assets/ai_melody_convertation.png" alt="AI Melody Generator Convertation Screen">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/ai-music-generator-make-songs/id6670604179?mt=12" target="_blank">AppStore link</a>
+        </p>
+    </div>
+
+    <div class="project" id="ai-melody-generator-macos">
+        <h3>AI Melody Generator macOS</h3>
+        <p class="subtitle">Сентябрь 2024</p>
+        <p>Спустя 10 месяцев после выпуска мобильного приложения, было предложено реализовать версию на macOS. Мой первый опыт создания полноценного мультиплатформенного приложения на SwiftUI.<br>
+           На данный момент входит в топ-199 приложений в категории Music в AppStore.<br>
+        </p>
+        <p>
+            <strong>Платформа:</strong> macOS 11+
+        </p>
+        <div class="image-row-horizontal">
+            <a href="assets/ai_melody_mac_offer.gif" target="_blank">
+                <img src="assets/ai_melody_mac_offer.gif" alt="AI Melody Generator Offer Animation">
+            </a>
+            <a href="assets/ai_melody_mac_main.png" target="_blank">
+                <img src="assets/ai_melody_mac_main.png" alt="AI Melody Generator Main Screen">
+            </a>
+        </div>
+        <div class="image-row-horizontal">
+            <a href="assets/ai_melody_player.png" target="_blank">
+                <img src="assets/ai_melody_player.png" alt="AI Melody Generator Player">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/ai-music-generator-make-songs/id6670604179?mt=12" target="_blank">AppStore link</a>
+        </p>
+    </div>
+
+    <div class="project" id="fashion-design">
+        <h3>Fashion Design</h3>
+        <p class="subtitle">Декабрь 2023</p>
+        <p>Одно из топовых приложений компании MoveApp, созданное для дизайнеров одежды.
+           В этом приложении я отвечал за важный апдейт по встраиванию AI функционала.<br>
+        </p>
+        <p><strong>Ключевые моменты:</strong></p>
+        <ul>
+            <li>Разработал и интегрировал фичу для генерации визуализаций пользовательских скетчей в выбранных стилях</li>
+            <li>Оптимизировал клиентскую часть для более стабильной работы</li>
+            <li>Добавил возможность отправки AI визуализаций на конкурс для премиум пользователей</li>
+        </ul>
+        <p>
+            <strong>Технологии:</strong> UIKit, Realm, Alamofire, FileManager<br>
+            <strong>Платформа:</strong> iOS 13+
+        </p>
+        <div class="image-row">
+            <a href="assets/fashion_sketch.png" target="_blank">
+                <img src="assets/fashion_sketch.png" alt="Fashion Design sketch">
+            </a>
+            <a href="assets/fashion_styles.png" target="_blank">
+                <img src="assets/fashion_styles.png" alt="Fashion Design styles">
+            </a>
+            <a href="assets/fashion_ai_result.png" target="_blank">
+                <img src="assets/fashion_ai_result.png" alt="Fashion Design ai result">
+            </a>
+            <a href="assets/fashion_history.png" target="_blank">
+                <img src="assets/fashion_history.png" alt="Fashion Design history">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/fashion-design-sketches-style/id1413710253" target="_blank">AppStore link</a>
+        </p>
+    </div>
+
+    <div class="project" id="custom-desktop-theme-kit">
+        <h3>Custom Desktop Theme Kit</h3>
+        <p class="subtitle">Февраль 2024</p>
+        <p>
+            Приложение для macOS, позволяющее пользователям кастомизировать рабочий стол. Я отвечал за тестирование идей, за разработку с нуля и за успешный выпуск в AppStore.
+            Достигло топ-38 в категории графика и дизайн в Mac App Store.
+        </p>
+        <p><strong>Ключевые особенности:</strong></p>
+        <ul>
+            <li>Реализовал выбор тематических обоев с возможностью редактирования</li>
+            <li>Добавление стикеров-блоков под виджеты, настройку их размера и положения</li>
+            <li>Добавление блоков текста, изменение шрифта, размера и начертания</li>
+            <li>Разработал функционал undo/redo для редактирования персонализации обоев</li>
+            <li>Внедрил генерацию AI-стикеров для персонализации обоев</li>
+            <li>Добавил возможность добавлять пользовательские картинки в виде стикеров</li>
+            <li>Установку полученного результата на рабочий стол</li>
+            <li>Добавил настройку внешнего вида курсора с анимациями на базе SpriteKit</li>
+            <li>Добавил кастомизацию внешнего вида папок на рабочем столе</li>
+        </ul>
+        <p>
+            <strong>Технологии:</strong> AppKit, SpriteKit<br>
+            <strong>Платформа:</strong> macOS 10.15+
+        </p>
+        <div class="image-row-horizontal">
+            <a href="assets/desktop_blocks.gif" target="_blank">
+                <img src="assets/desktop_blocks.gif" alt="Blocks Animation">
+            </a>
+            <a href="assets/desktop_sticker.gif" target="_blank">
+                <img src="assets/desktop_sticker.gif" alt="Stickers generation">
+            </a>
+        </div>
+        <div class="image-row-horizontal">
+            <a href="assets/desktop_folders.gif" target="_blank">
+                <img src="assets/desktop_folders.gif" alt="Folders customization">
+            </a>
+        </div>
+        <div class="image-row-horizontal">
+            <a href="assets/desktop_cursor.gif" target="_blank">
+                <img src="assets/desktop_cursor.gif" alt="Cursor customization">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/custom-desktop-kit-themes/id6476967593" target="_blank">AppStore link</a>
+        </p>
+    </div>
+
+    <div class="project" id="couple-days">
+        <h3>Couple Days</h3>
+        <p class="subtitle">Сентябрь 2024</p>
+        <p>
+            Приложение для пар, созданное для укрепления отношений через синхронизацию и интерактивные функции.
+            Я отвечал за совместную с бэкендом проработку и оттачивание API, за разработку приложения с нуля и успешное прохождение модерации в App Store.
+        </p>
+        <p><strong>Ключевые моменты:</strong></p>
+        <ul>
+            <li>Реализовал авторизацию через Apple ID и email</li>
+            <li>Настроил синхронизацию данных между партнерами: фон, общие события, статусы, вопросы</li>
+            <li>Разработал систему ежедневных вопросов для пар с отображением в формате чата (ответ партнера виден только после собственного ответа)</li>
+            <li>Интегрировал уведомления: напоминания о событиях и ответах партнера</li>
+            <li>Создал несколько типов виджетов: количество дней вместе, обратный отсчет до событий, расстояние до партнера</li>
+        </ul>
+        <p>
+            <strong>Технологии:</strong> SwiftUI, Realm, Firebase, WidgetKit, OneSignal<br>
+            <strong>Платформа:</strong> iOS 14+
+        </p>
+        <div class="image-row">
+            <a href="assets/couple_auth.gif" target="_blank">
+                <img src="assets/couple_auth.gif" alt="Couple auth">
+            </a>
+            <a href="assets/couple_bg.gif" target="_blank">
+                <img src="assets/couple_bg.gif" alt="Couple background customization">
+            </a>
+            <a href="assets/couple_widgets.gif" target="_blank">
+                <img src="assets/couple_widgets.gif" alt="Couple widgets">
+            </a>
+            <a href="assets/couple_event.png" target="_blank">
+                <img src="assets/couple_event.png" alt="Couple event screen">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/couple-days-love-countdown/id6618139551" target="_blank">AppStore link</a>
+        </p>
+    </div>
+
+    <div class="project" id="ai-story-writing">
+        <h3>AI Story Writing</h3>
+        <p class="subtitle">Октябрь 2024</p>
+        <p>
+            Интерактивное приложение, позволяющее пользователям создавать уникальные истории с помощью AI, вводя свои действия и реплики в разнообразных сеттингах.
+            Я отвечал за разработку приложения с нуля и успешный релиз в AppStore.
+        </p>
+        <p><strong>Ключевые моменты:</strong></p>
+        <ul>
+            <li>Реализовал генерацию AI историй на основе пользовательского текстового ввода</li>
+            <li>Реализовал плавную анимированную работу элементов экрана генерации истории</li>
+            <li>Настроил динамическую конфигурацию экрана оффера, подтягивая параметры с внутреннего сервера</li>
+            <li>Добавил поддержку разнообразных сеттингов</li>
+            <li>Добавил локализацию на русский и английские языки</li>
+        </ul>
+        <p>
+            <strong>Технологии:</strong> SwiftUI, Core Data<br>
+            <strong>Платформа:</strong> iOS 14+
+        </p>
+        <div class="image-row">
+            <a href="assets/story_intro.gif" target="_blank">
+                <img src="assets/story_intro.gif" alt="App's intro">
+            </a>
+            <a href="assets/story_setting.gif" target="_blank">
+                <img src="assets/story_setting.gif" alt="Story writting">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/ai-story-writing-book-creator/id6736349075" target="_blank">AppStore link</a>
+        </p>
+    </div>
+
+    <div class="project" id="ai-story-writing-mac">
+        <h3>AI Story Writing Mac</h3>
+        <p class="subtitle">Октябрь 2024</p>
+        <p>
+            Спустя неделю адаптировал версию для macOS
+        </p>
+        <p>
+            <strong>Платформа:</strong> macOS 11+
+        </p>
+        <div class="image-row-horizontal">
+            <a href="assets/story_mac_main.png" target="_blank">
+                <img src="assets/story_mac_main.png" alt="Main Screen">
+            </a>
+            <a href="assets/story_mac_chat.png" target="_blank">
+                <img src="assets/story_mac_chat.png" alt="Chat Screen">
+            </a>
+        </div>
+        <p class="project-link">
+            <a href="https://apps.apple.com/us/app/ai-story-writer-text-roleplay/id6736637894?mt=12" target="_blank">AppStore link</a>
+        </p>
+    </div>
+</body>
+</html>
